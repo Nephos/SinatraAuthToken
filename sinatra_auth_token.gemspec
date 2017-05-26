@@ -27,9 +27,9 @@ Gem::Specification.new do |s|
   s.license     = 'GPL-3.0'
 
   s.cert_chain  = ['certs/nephos.pem']
-  s.signing_key = File.expand_path('~/.ssh/gem-private_key.pem') if $0 =~ /gem\z/
+  s.signing_key = File.expand_path('~/.ssh/gem-private_key-2.pem') if $0 =~ /gem\z/
 
-  s.add_dependency 'sinatra', '>= 1.0'
+  s.add_dependency 'sinatra', '~> 1.0'
   s.add_dependency 'nomorebeer', '~> 1.1'
 
 end
